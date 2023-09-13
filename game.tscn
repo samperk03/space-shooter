@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://citlwkt2fvq6f"]
+
+[ext_resource type="Script" path="res://Player/Player.gd" id="1_5wm5v"]
+[ext_resource type="Texture2D" uid="uid://qe7cy3gsa5y3" path="res://Assets/3d-2d-styled-sprites-by-MillionthVector/bgbattleship.png" id="1_hr1ix"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(512, 300)
+script = ExtResource("1_5wm5v")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+position = Vector2(-0.500002, -3)
+scale = Vector2(0.841667, 1.05)
+texture = ExtResource("1_hr1ix")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Player"]
+polygon = PackedVector2Array(10, -53.2, 10, -50, 11.5, -44, 27, -23.7, 27, -12.5, 34, -5.9, 34, -2.4, 39.5, 13.1, 44, 14.6, 44, 31, 42.8, 31, 40.8, 46, 39.1, 46, 35.2, 53, 28.5, 53, 4.4, 40, -4.5, 40, -27.5, 53, -35, 53, -40, 46.7, -40, 43, -44.3, 14, -41.3, 14, -40, 13.6, -40, 11.7, -32.4, -10, -30.5, -10, -26, -12.2, -26, -13, -27.2, -25, -25, -25, -12, -42.7, -12, -49.6, -9.1, -54, -7.6, -54, -3, -57.1, -3, -60, -2.3, -60)
