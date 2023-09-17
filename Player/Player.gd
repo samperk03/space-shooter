@@ -5,7 +5,7 @@ var speed = 5
 var max_speed = 400
 var rotate_speed = 0.13
 var nose = Vector2(0, -60)
-var Bullet = load("res://Assets/3d-2d-styled-sprites-by-MillionthVector/12.png")
+var Bullet = load("res://Assets/3d-2d-styled-sprites-by-MillionthVector/08.png")
 
 func get_input():
 	var to_return = Vector2.ZERO

@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://b107ieryhk1m4"]
+[gd_scene load_steps=4 format=3 uid="uid://b107ieryhk1m4"]
 
 [ext_resource type="Script" path="res://Player/bullet.gd" id="1_pwwc7"]
+[ext_resource type="Texture2D" uid="uid://737ps5lifdoh" path="res://Assets/3d-2d-styled-sprites-by-MillionthVector/08.png" id="2_7ueq6"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_020kp"]
 radius = 12.0
@@ -9,6 +10,7 @@ radius = 12.0
 script = ExtResource("1_pwwc7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_7ueq6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_020kp")
