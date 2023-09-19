@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b107ieryhk1m4"]
 
 [ext_resource type="Script" path="res://Player/bullet.gd" id="1_pwwc7"]
-[ext_resource type="Texture2D" uid="uid://737ps5lifdoh" path="res://Assets/3d-2d-styled-sprites-by-MillionthVector/08.png" id="2_7ueq6"]
+[ext_resource type="Texture2D" uid="uid://66wi140tkdid" path="res://Assets/Usable bullets/sprites_-_lasers_bullets_1_66v2.5/Laser Sprites/01.png" id="2_772uo"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_020kp"]
 radius = 12.0
@@ -10,9 +10,12 @@ radius = 12.0
 script = ExtResource("1_pwwc7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_7ueq6")
+rotation = -1.5708
+texture = ExtResource("2_772uo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -2)
+rotation = -1.61094
 shape = SubResource("CircleShape2D_020kp")
 
 [node name="Timer" type="Timer" parent="."]
