@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://qe7cy3gsa5y3" path="res://Assets/3d-2d-styled-sprites-by-MillionthVector/bgbattleship.png" id="3_h1a8n"]
 
 [node name="Player" type="CharacterBody2D"]
-position = Vector2(512, 300)
+position = Vector2(500, 350)
 script = ExtResource("1_bwpa3")
 metadata/_edit_group_ = true
 
@@ -19,4 +19,14 @@ scale = Vector2(0.841667, 1.05)
 texture = ExtResource("3_h1a8n")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
 polygon = PackedVector2Array(10, -53.2, 10, -50, 11.5, -44, 27, -23.7, 27, -12.5, 34, -5.9, 34, -2.4, 39.5, 13.1, 44, 14.6, 44, 31, 42.8, 31, 40.8, 46, 39.1, 46, 35.2, 53, 28.5, 53, 4.4, 40, -4.5, 40, -27.5, 53, -35, 53, -40, 46.7, -40, 43, -44.3, 14, -41.3, 14, -40, 13.6, -40, 11.7, -32.4, -10, -30.5, -10, -26, -12.2, -26, -13, -27.2, -25, -25, -25, -12, -42.7, -12, -49.6, -9.1, -54, -7.6, -54, -3, -57.1, -3, -60, -2.3, -60)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(2.08165e-12, 0.67)
+scale = Vector2(0.858073, 0.992585)
+polygon = PackedVector2Array(-1, -63, -13, -53, -15, -43, -30, -24, -29, -16, -36, -9, -41, 10, -49, 16, -39, 54, -28, 55, -1, 42, 29, 55, 39, 55, 43, 44, 47, 16, 40, 6, 36, -8, 30, -14, 30, -26, 13, -45, 11, -57)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

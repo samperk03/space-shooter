@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpacib6y3bbnt"]
+
+[ext_resource type="Script" path="res://Enemy/enemy_bullet.gd" id="1_hli2t"]
+[ext_resource type="Texture2D" uid="uid://bh4h2xjntotxc" path="res://Assets/Usable bullets/sprites_-_lasers_bullets_1_66v2.5/Laser Sprites/10.png" id="2_lh4fg"]
+
+[node name="Enemy_Bullet" type="Area2D"]
+script = ExtResource("1_hli2t")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.842651, 3.68335e-08)
+rotation = -1.5708
+scale = Vector2(1, 0.985345)
+texture = ExtResource("2_lh4fg")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-0.999999, 2)
+rotation = -1.5708
+scale = Vector2(0.502353, 0.428419)
+polygon = PackedVector2Array(9.5, -20.8, 18.5, -16.8, 18.5, -15.2, 25.5, -7.3, 25.5, -3.5, 26.8, 5.5, 24.8, 5.5, 20.8, 14.5, 19.2, 14.5, 8.2, 22.5, -5.9, 22.5, -18.5, 16.8, -18.5, 15.4, -25.5, 9.4, -25.5, 6.9, -29.4, -3.5, -27, -3.5, -25, -10.5, -23.4, -10.5, -17.4, -17.5, -14.8, -17.5, -7.5, -20.8, -7.5, -22.5, 9.5, -22.5)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+autostart = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
