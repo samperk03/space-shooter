@@ -6,6 +6,7 @@
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(500, 350)
+scale = Vector2(0.75, 0.75)
 script = ExtResource("1_bwpa3")
 metadata/_edit_group_ = true
 

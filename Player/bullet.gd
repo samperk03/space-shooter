@@ -1,7 +1,7 @@
 extends Area2D
 
-var speed = 15
-var damage = 1
+var speed = 10
+var damage = 5
 var velocity = Vector2.ZERO
 var Effects = null
 var Explosion = load("res://Effects/explosion.tscn")

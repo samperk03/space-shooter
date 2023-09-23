@@ -27,8 +27,8 @@ func _physics_process(_delta):
 	velocity += get_input()*speed
 	velocity =velocity.normalized() * clamp(velocity.length(), 0, max_speed)
 
-	position.x = wrapf(position.x, 0, 1152)
-	position.y = wrapf(position.y, 0, 648)
+	position.x = wrapf(position.x, 0, Global.VP.x)
+	position.y = wrapf(position.y, 0, Global.VP.y)
 	velocity = velocity.normalized() * clamp(velocity.length(), 0, max_speed)
 	
 	move_and_slide()
@@ -37,7 +37,7 @@ func _physics_process(_delta):
 		var bullet = Bullet.instantiate()
 		bullet.position = position + nose.rotated(rotation)
 		bullet.rotation = rotation
-		var Effects = get_node_or_null("/root/Game/Effects")
+		var Effects = get_node_or_null("/root/Game/Effects/")
 		if Effects != null:
 			Effects.add_child(bullet)
 			
@@ -45,14 +45,15 @@ func _physics_process(_delta):
 func damage(d):
 	health -= d 
 	if health <= 0:
-		Effects = get_node_or_null("/root/Game/Effects")
+		Effects = get_node_or_null("/root/Game/Effects/")
 		if Effects != null:
 			var explosion = Explosion.instantiate()
 			Effects.add_child(explosion)
 			explosion.global_position = global_position 
 			hide()
 			await explosion.animation_finished
-	queue_free()
+		Global.update_lives(-1)
+		queue_free()
 
 
 func _on_area_2d_body_entered(body):

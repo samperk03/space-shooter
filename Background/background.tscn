@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgl680q1l5xc3"]
+
+[ext_resource type="Texture2D" uid="uid://fmi5lq7d3x22" path="res://Assets/spacefield_a-000.png" id="1_son4i"]
+
+[node name="Background" type="Sprite2D"]
+position = Vector2(580, 331)
+texture = ExtResource("1_son4i")
