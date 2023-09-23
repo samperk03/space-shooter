@@ -1,11 +1,11 @@
 # space-shooter
 Project 2 for msch-c220
 # Project Name
- 9/19/23
+ 9/21/23
 2d physics based space arcade shooter 
 
 ## Implementation
-fixed bug related to shooting which was resulting in the game crashing 
+added enemy who moves and shoots at the player (proj.2 pt.3) 
 ## What Makes this a Game?
 
 ## References
