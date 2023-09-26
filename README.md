@@ -5,7 +5,7 @@ Project 2 for msch-c220
 2d physics based space arcade shooter 
 
 ## Implementation
-added enemy who moves and shoots at the player (proj.2 pt.3) 
+Added UI systems, Pasue menu, start and end screens, score life and time counter. Added a function that adds time to game whenever you kill an enemy. Also added enemy respawn. 
 ## What Makes this a Game?
 
 ## References
