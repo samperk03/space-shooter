@@ -18,34 +18,35 @@
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(1, 0.760784, 1, 1)
-position = Vector2(584, 343)
-scale = Vector2(4.6, 4.6)
+position = Vector2(1610.76, 1031.5)
+scale = Vector2(12.1497, 13.2063)
 texture = ExtResource("1_h1dy3")
 
 [node name="Sprite2D4" type="Sprite2D" parent="."]
 modulate = Color(1, 0.760784, 1, 1)
-position = Vector2(584, 343)
-scale = Vector2(4.6, 4.6)
+position = Vector2(1521.2, 796.5)
+scale = Vector2(11.4912, 10.2688)
 texture = ExtResource("2_kur8w")
 
 [node name="Sprite2D5" type="Sprite2D" parent="."]
 modulate = Color(1, 0.760784, 1, 1)
-position = Vector2(416, 204)
+position = Vector2(812.48, 764.288)
 rotation = 0.403171
-scale = Vector2(1.6875, 1.6875)
+scale = Vector2(5.98539, 6.18514)
 texture = ExtResource("3_llipg")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 modulate = Color(1, 0.760784, 1, 1)
-position = Vector2(943, 115)
-scale = Vector2(1.85682, 1.81724)
+position = Vector2(2650, 314)
+rotation = -2.17468
+scale = Vector2(13.435, 13.1486)
 texture = ExtResource("3_jp36q")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
 modulate = Color(1, 0.760784, 1, 1)
-position = Vector2(253, 582)
-rotation = 1.5708
-scale = Vector2(1.85682, 1.81724)
+position = Vector2(570, 1150)
+rotation = 1.32994
+scale = Vector2(10.3625, 10.1416)
 texture = ExtResource("4_rw1vl")
 
 [node name="asteroid_container" type="Node2D" parent="."]
